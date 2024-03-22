@@ -1,0 +1,777 @@
+*{
+
+        margin: 0;
+        padding: 0;
+  box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(46, 45, 45);
+    position: fixed;
+    z-index: 10;
+    top: 0;
+
+}
+.head-imag{
+    width: 150px;
+    height: 40px;
+    float: left;
+    margin-left: 50px;
+
+}
+.header-ul{
+    list-style: none;
+    float:right;
+    margin-right: 125px;
+}
+.header-ul li{
+    display: inline-block;
+    margin: 5px 20px;
+
+}
+.header-ul li a{
+    text-decoration: none;
+    color: rgb(199, 222, 241);
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/ddd.jpg);
+    position: relative;
+    
+}
+.home-over{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0,0,0.8);
+}
+.home-content{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+.home-titlle{
+    color: aliceblue;
+    font-size: 40px;
+}
+.home-p{
+    margin: 20px 0px;
+    color: rgb(165, 167, 169);
+    font-size: 20px;
+    
+}
+.home-but{
+    width: 100px;
+    padding: 16px  0px;
+    margin: 0px 10px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.home-but:hover{
+    opacity: 0.7;
+}
+/*home end*/
+.welcom-head{
+   margin: 60px 0px;
+}
+.welcom-titlle{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+}
+.wlcolm-lin{
+    width: 50px;
+    height: 3px;
+    background-color: blue;
+    margin:auto;
+    margin-bottom: 100px;
+
+}
+.welcom-contante{
+    width: 85%;
+   margin: auto;
+   
+   
+    
+}
+.pirent-welcom{
+overflow: auto;
+
+}
+
+.welcom-new{
+    float: left;
+    width: 30%;
+    height: 200px;
+    border: solid 1px;
+    position: relative;
+    text-align: center;
+padding: 20px 50px;
+
+
+}
+.welcom-text{
+    position: absolute;
+    z-index: 3;
+}
+.welcom-new i{
+    font-size: 35px;
+    color: rgb(146, 146, 221);
+}
+.new2{
+   margin: 0px 5%;
+}
+.welcom-p{
+    color: rgb(176, 185, 192);
+}
+.new1but{
+  margin-top: 20px;
+  background: none;
+  border: 0;
+  color:blue;
+}
+.welcom-new:hover .new1{
+    color: aliceblue;
+}
+.welcom-new::after {
+    position: absolute;
+    content: "";
+z-index: 1;
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+background-color: black;
+    transition: 1s;
+opacity: 0;
+   
+ }
+ .welcom-new:hover::after  {
+    width: 100%;
+    height: 100%;
+   opacity: 0.9;
+ }
+ /* end welcom */
+ .work-pirnt{
+    margin-top: 150px;
+    width: 100%;
+    height: 110vh;
+    background-color:rgb(192, 202, 210)
+ 
+   
+ }
+ .work-head{
+    text-align: center;
+    padding-top: 100px;
+   
+ }
+ .work-line{
+    width: 50px;
+    height: 3px;
+    background-color: blue;
+    margin: auto;
+    margin-bottom: 100px;
+ }
+ .work-contecte{
+    width: 80%;
+    margin: auto;
+ }
+ .work-home1{
+    overflow: auto;
+ }
+ .work-itme{
+    width: 30%;
+    margin-bottom: 50px;
+float: left;
+position: relative;
+ }
+ .itm2{
+    margin: 0px 5%;
+ }
+ .itm5{
+    margin: 0px 5%;
+ }
+ .work-icon{
+    font-size: 25px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0,0,0.7);
+    padding: 15px 15px;
+    opacity: 0; 
+     visibility: hidden; 
+     transition: 2S;
+ }
+ .work-icon-titlle{
+    color: rgb(108, 108, 212);
+ }
+ .work-icon-p{
+    color: aliceblue;
+    margin-bottom: 15PX;
+ }
+ .work-itme:hover  .work-icon{
+    opacity: 1;
+    visibility: visible;
+ }
+ /* end work */
+ .whatoffer-head{
+    margin-top:  200px;
+    text-align: center;
+    font-size: 25px;
+    
+ }
+ .offer-line{
+    width: 50px;
+    height: 3px;
+    background-color: blue;
+    margin: auto;
+    margin-bottom: 70px;
+ }
+ .offer-conterant{
+    width: 80%;
+    margin: auto;
+    
+ }
+ .offer-home{
+    overflow: auto;
+ }
+ .offer-item{
+    float: left;
+    width: 30%;
+    height: 200px;
+    border: solid 1px;
+    position: relative;
+padding: 20px 0px;
+margin-bottom: 40px;
+text-align: center;
+
+
+ }
+ .offer2{
+   margin:  0px 5%;
+ }
+ .offer5{
+    margin: 0px 5%;
+ }
+ .offer-pirnt{
+    position: absolute;
+    z-index: 3;
+ }
+ .offer-item .offer-item-tittle{
+    font-size: 25px;
+    display: inline-block;
+    padding-bottom: 15px;
+   text-align: center;
+   
+ }.offer-item i{
+    padding-right: 20px;
+    color: blue;
+ }
+ .offer-item  .offer-item-p{
+    color: rgb(143, 146, 145);
+    text-align: center;
+    padding-left: 15px;
+ }
+.offer-item:hover .offer-item-tittle{
+    color: white;
+}
+.offer-item::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    transition: 1s;
+    opacity: 0;
+}
+.offer-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+/* end offer */
+.choose-pirant{
+margin-top: 75px;
+background-color:rgb(251, 239, 239);
+padding :50px 0px;
+}
+.choose-head{
+    padding-left: 30px;
+}
+.choose-head-tittle{
+font-size: 35px;
+}
+.choose-head-line{
+    width: 50px;
+    height: 3px;
+    background-color: blue;
+}
+.choose-centecte{
+    width: 80%;
+    margin: auto;
+}
+.choose-home{
+    overflow: auto;
+}
+.choose-par{
+float: left;
+
+padding: 30px 10px;
+}
+.choose-par .choose-p{
+    padding: 20px 10px;
+    color: rgb(104, 103, 103);
+    display: inline-block;
+}
+.choose-itme{
+    float: right;
+    text-align: center;
+   
+}
+.choose-par i{
+  color: blue;
+  font-size: 20px;
+}
+.image-home{
+    background-image: url(../image/eee.jpeg);
+    
+    background-attachment: fixed;
+    padding: 200px 0px;
+
+    position: relative;
+}
+
+.bac-imag{
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+top: 0;
+left: 0;
+    background-color: rgba(0, 0,0,0.7);
+}
+
+.imag-conecte{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: auto;
+  
+
+   
+}
+.imag-pirnt{
+    overflow: auto;
+    
+   
+}
+.imag-icon{
+    float: left;
+width: 25%;
+text-align: center;
+
+
+}
+.imag-icon i{
+    color: blue;
+    font-size: 25px;
+}
+.imag-icon .user-conte{
+color: white;
+font-size: 30px;
+
+}
+.imag-icon  .user-p{
+color: rgb(223, 223, 223);
+font-size: 20px;
+
+} 
+.Pricing-head{
+margin-top: 150px;
+
+}
+.pric-head-tittle{
+text-align: center;
+color: black;
+font-size: 30px;
+
+}
+.pricing-head-line{
+width: 50px;
+height: 3px;
+background-color: blue;
+margin: auto;
+margin-top: 10px;
+margin-bottom: 50px;
+}
+.pricing-contecte{
+    width: 80%;
+   margin: auto;
+}
+.pricing-home{
+    overflow: auto;
+    
+}
+.pricing-table{
+    float: left;
+    width: 30%;
+    border: solid 1px black;
+    position: relative;
+    padding: 20px 5px;
+    text-align: center;
+    margin: auto; 
+}
+.table2{
+   margin: 0px 5%;
+}
+.pricing-table:hover  .pricing-circel {
+    color: rgb(180, 68, 68);
+}
+.pricing-table:hover  .pricing-tittle{
+    color: rgb(195, 101, 101);
+}
+.pricing-circel{
+    width: 100px;
+    height: 100px;
+    border: solid 1px blue;
+    border-radius: 50%;
+margin:auto;
+margin-top: 30px;
+color: rgb(17, 17, 17);
+}
+.circel-tittle{
+    font-size: 40px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.pricing-par{
+    margin: 20px 5px;
+    
+}
+.pricing-p{
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: rgb(88, 91, 93);
+}
+.pricing-tittle{
+    color: rgb(95, 93, 93);
+}
+.pricing-button{
+    width: 130px;
+    height: 30px;
+    background-color: none;
+    border: solid 1px blue;
+}
+.pricing-table::after{
+position: absolute;
+content: "";
+ width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    transition: 2s;
+    opacity: 0;
+    
+}
+.pricing-table:hover:after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.stde-pirnte{
+    margin-top: 150px;
+    background-image: url(../image/pexels-alisa-velieva-20165766.jpg) ;
+    background-attachment: fixed;
+    padding: 200px  0px;
+    position: relative;
+}
+.stde-imge{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: rgba(0, 0,0,0.7);
+    
+}
+.stde-contect{
+    width: 80%;
+    position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+    margin: auto;
+    overflow: auto;
+}
+.stde-heade{
+    float: left;
+    width: 50%;
+    padding: 50px 10px;
+
+}
+.stde-heade-imag{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float: left;
+   top: 0;
+   left: 0;
+    
+}
+.stde-heade-tittle{
+    color: white;
+  margin-top: 20px;
+ 
+}
+.stde-heade-span{
+    color: blue;
+    margin-top: 10px;
+   
+}
+.stde-heade-p{
+    color: white;
+   padding: 40px 10px;
+}
+.team-pirent{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.team-header{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 75px;
+}
+.team-head-line{
+    width: 50;
+    height: 3;
+    background-color: blue;
+    margin: auto;
+}
+.team-contect{
+    width: 80%;
+    margin: auto;
+}
+.team-home{
+    overflow: auto;
+}
+.team-itme{
+    float: left;
+    width: 30%;
+    background-color: rgb(217, 218, 216);
+    text-align: center;
+    padding: 14px  18px ;
+    position: relative;
+}
+.team2{
+    margin: 0px 5%;
+}
+.team-imag{
+    width: 95%;
+    margin: auto;
+    position: relative;
+}
+.team-imag img{
+    width: 100%;
+}
+.team-icones{
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+   background-color: rgba(0, 0,0,0.5);
+   opacity: 0;
+   visibility: hidden;
+   transition: 2s;
+}
+.team-itme:hover  .team-icones{
+opacity: 1;
+visibility: visible;
+}
+.team-icones a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(38, 166, 240);
+    color: #fff;
+  margin-left: auto;
+
+}
+.team-icones a  i{
+    line-height: 40px;
+    font-size: 21px;
+}
+.team-info-title{
+    padding: 15px  0px;
+    text-transform: capitalize;
+}
+.team-info-p{
+    color: rgb(97, 97, 97);
+    text-transform: uppercase;
+}
+.team-itme:hover .team-info-title{
+    color: white;
+}
+.team-itme:hover .team-info-p{
+    color: blue;
+}
+.team-itme::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    transition: 1s;
+}
+.team-itme:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+ 
+}
+.recent-header{
+    margin-bottom: 60px;
+}
+
+.recent-head-tittle{
+    font-size: 30px;
+    text-align: center;
+}
+.recent-head-line{
+    width: 50px;
+    height: 3px;
+    background-color: blue;
+    margin: auto;
+    
+}
+.recent-conected{
+    width: 80%;
+    margin: auto;
+}
+.recent-home{
+    overflow: auto;
+}
+.recent-itme{
+    float: left;
+    width: 30%;
+    position: relative;
+    
+}
+.recent2{
+    margin: 0px 5%;
+}
+.recent-imag{
+    margin: auto;
+    padding-bottom: 40px;
+    
+}
+.recent-imag  i{
+    color: rgb(71, 71, 216);
+}
+
+.recent-info{
+padding-bottom: 20px;
+}
+.recent-info-p{
+    padding: 20px  10px;
+    color: rgb(120, 118, 118);
+    line-height: 25px;
+}
+.recent-but{
+background: none;
+border: 0;
+color: blue;
+}
+.recent-itme::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(137, 137, 229);
+    transition: 1s;
+    opacity: 0;
+}
+.recent-itme:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+.end-pirint{
+   padding-bottom: 50px;
+    
+    background-color: rgb(62, 56, 56);
+    
+}
+.end-content{
+    
+   width: 60%;
+   margin: auto;
+   
+}
+
+.end-home {
+    text-align: center;
+    overflow: auto;
+   position: relative;
+}
+.end-conhome{
+    margin-top: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.end-itme{
+    float: left;
+    width: 65px;
+    height: 65px;
+    border: solid 1px;
+    border-radius: 50%;
+    background-color: blue;
+    text-align: center;
+}
+.end-home img{
+    margin: 20px 5px;
+    
+}
+.end-home  a{
+
+text-align: center;
+
+}
+.end-home a i{
+   font-size: 35px;
+    text-align: center;
+  color:white;
+  margin: 20px 0px;
+}
+.end-home p{
+    margin-top: 80px;
+}
